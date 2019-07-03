@@ -31,11 +31,15 @@ $(document).ready(function(){
 	var $field = $("td").text();
 	var $showWiningInfo = $(".message");
 	var $showTurnInfo = $(".turn-info");
-	var $audioWin = $("audio")[0]; 
+	// var $audioWin = $("audio")[0]; 
 	var $audioTie = $("audio")[1]; 
-	var $audioSign = $("audio")[2]; 
-  
-  
+    var $audioSign = $("audio")[2]; 
+    // var image = document.createElement("img");
+    // image.src = "images/woody.png";
+    // var oImg = document.createElement("img");
+    // oImg.setAttribute('src', 'images/woody.png');
+    var img = new Image();
+    img.src = "images/woody.png";
    //On.click func
 	function doOnClick(){
 	  $("#reset").on("click", function(){
@@ -336,7 +340,8 @@ $(document).ready(function(){
 	  }     
 		scoreInfo();
 	   
-		return winingMessage; 
+        return winingMessage; 
+
   }// end of winnerUpdate func
 	 
    //Show updated current scores
@@ -355,9 +360,11 @@ $(document).ready(function(){
 		$showWiningInfo.css("display", "block").html("<p>" + winingMessage + "</p>");
 	  if(winingMessage === "It's Tie!"){
 		 $audioTie.play();
-		 }else{
-		 $audioWin.play();
-		 }
+         }
+        //  else{
+        //  $audioWin.play();
+        
+		//  }
 		$showTurnInfo.css("display", "none");   
 	} //end of winInfo func
 	
@@ -555,7 +562,7 @@ $(document).ready(function(){
 	var audio, playbtn, mutebtn, seek_bar;
 	function initAudioPlayer(){
 		audio = new Audio();
-		audio.src = "Toy Story - Youve Got a Friend in Me.mp3";
+		audio.src = "images/Toy Story - Youve Got a Friend in Me.mp3";
 		audio.loop = true;
 		audio.play();
 		// Set object references
@@ -568,10 +575,10 @@ $(document).ready(function(){
 		function playPause(){
 			if(audio.paused){
 				audio.play();
-				playbtn.style.background = "url(https://image.flaticon.com/icons/svg/189/189889.svg) no-repeat";
+				playbtn.style.background = "url(images/microphone.svg) no-repeat";
 			} else {
 				audio.pause();
-				playbtn.style.background = "url(https://image.flaticon.com/icons/svg/148/148744.svg) no-repeat";
+				playbtn.style.background = "url(images/muted.svg) no-repeat";
 			}
 		}
 		// function mute(){
