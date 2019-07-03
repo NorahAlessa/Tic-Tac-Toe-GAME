@@ -250,11 +250,11 @@ $(document).ready(function(){
 	function checkResult(player){
 	 
 	 if($("#1a").text() === player && $("#2a").text() === player && $("#3a").text() === player){
-	   $("#1a, #2a, #3a").addClass('td-winning-color');
+	   $("#1a, #2a, #3a").addClass('td-winning-color').addClass("animated pulse");
 	   return winnerUpdate(player);
 	 }
 	 else if($("#1b").text() === player && $("#2b").text() === player && $("#3b").text() === player){
-	   $("#1b, #2b, #3b").addClass('td-winning-color');
+	   $("#1b, #2b, #3b").addClass('td-winning-color').addClass("animated pulse");
 		return winnerUpdate(player);
 	 }
 	 else if($("#1c").text() === player && $("#2c").text() === player && $("#3c").text() === player){
@@ -562,7 +562,7 @@ $(document).ready(function(){
 	var audio, playbtn, mutebtn, seek_bar;
 	function initAudioPlayer(){
 		audio = new Audio();
-		audio.src = "images/Toy Story - Youve Got a Friend in Me.mp3";
+		audio.src = "images/Toy Story -Youve Got a Friend in Me.mp3";
 		audio.loop = true;
 		audio.play();
 		// Set object references
