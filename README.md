@@ -1,5 +1,5 @@
 # Tic-Tac-Toe-GAME
-![alt text](TicTacToe/images/hello2.png "Toy Story")
+![alt text](TicTacToe/images/readMe.png "Toy Story")
 
 ## Technical Requirements
 * Render a game board in the browser
