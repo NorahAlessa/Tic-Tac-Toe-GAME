@@ -38,8 +38,8 @@ $(document).ready(function(){
     // image.src = "images/woody.png";
     // var oImg = document.createElement("img");
     // oImg.setAttribute('src', 'images/woody.png');
-    var img = new Image();
-    img.src = "images/woody.png";
+    // var img = new Image();
+    // img.src = "images/woody.png";
    //On.click func
 	function doOnClick(){
 	  $("#reset").on("click", function(){
@@ -250,35 +250,35 @@ $(document).ready(function(){
 	function checkResult(player){
 	 
 	 if($("#1a").text() === player && $("#2a").text() === player && $("#3a").text() === player){
-	   $("#1a, #2a, #3a").addClass('td-winning-color').addClass("animated pulse");
+	   $("#1a, #2a, #3a").addClass('td-winning-color');
 	   return winnerUpdate(player);
 	 }
 	 else if($("#1b").text() === player && $("#2b").text() === player && $("#3b").text() === player){
-	   $("#1b, #2b, #3b").addClass('td-winning-color').addClass("animated pulse");
+	   $("#1b, #2b, #3b").addClass('td-winning-color');
 		return winnerUpdate(player);
 	 }
 	 else if($("#1c").text() === player && $("#2c").text() === player && $("#3c").text() === player){
-	   $("#1c, #2c, #3c").addClass('td-winning-color').addClass("animated pulse");
+	   $("#1c, #2c, #3c").addClass('td-winning-color');
 	   return winnerUpdate(player);
 	 }
 	 else if($("#1a").text() === player && $("#2b").text() === player && $("#3c").text() === player){
-	   $("#1a, #2b, #3c").addClass('td-winning-color').addClass("animated pulse");
+	   $("#1a, #2b, #3c").addClass('td-winning-color');
 	   return winnerUpdate(player);
 	 }
 	 else if($("#3a").text() === player && $("#2b").text() === player && $("#1c").text() === player){
-	   $("#3a, #2b, #1c").addClass('td-winning-color').addClass("animated pulse");
+	   $("#3a, #2b, #1c").addClass('td-winning-color');
 	   return winnerUpdate(player);
 	 }
 	 else if($("#1a").text() === player && $("#1b").text() === player && $("#1c").text() === player){
-	   $("#1a, #1b, #1c").addClass('td-winning-color').addClass("animated pulse");
+	   $("#1a, #1b, #1c").addClass('td-winning-color');
 	   return winnerUpdate(player);
 	 }
 	 else if($("#2a").text() === player && $("#2b").text() === player && $("#2c").text() === player){
-	   $("#2a, #2b, #2c").addClass('td-winning-color').addClass("animated pulse");
+	   $("#2a, #2b, #2c").addClass('td-winning-color');
 	   return winnerUpdate(player);
 	 }
 	 else if($("#3a").text() === player && $("#3b").text() === player && $("#3c").text() === player){
-	   $("#3a, #3b, #3c").addClass('td-winning-color').addClass("animated pulse");
+	   $("#3a, #3b, #3c").addClass('td-winning-color');
 	   return winnerUpdate(player);
 	 }else{
 		winingMessage = "It's Tie!";
