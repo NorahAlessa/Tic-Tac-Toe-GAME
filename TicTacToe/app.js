@@ -555,7 +555,7 @@ $(document).ready(function(){
 	var audio, playbtn, mutebtn, seek_bar;
 	function initAudioPlayer(){
 		audio = new Audio();
-		audio.src = "images/Toy Story - Youve Got a Friend in Me.mp3";
+		audio.src = "Toy Story - Youve Got a Friend in Me.mp3";
 		audio.loop = true;
 		audio.play();
 		// Set object references
