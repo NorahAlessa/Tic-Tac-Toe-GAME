@@ -103,11 +103,11 @@ button:hover{
 }
 .player1-score {
   float: left;
-  font-size: 24px;
+  font-size: 22px;
 }
 .player2-score {
   float: right;;
-  font-size:24px;
+  font-size:22px;
 }
 .message {
   position: absolute;
@@ -124,11 +124,11 @@ button:hover{
 }
 .turn-info {
   position: absolute;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-weight: bold;
   color: rgb(201, 36, 44);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  top: -60px;
+  top: -50px;
   display: none;
 }
 #reset {
@@ -162,9 +162,9 @@ button#playpausebtn{
   background:url(images/microphone.svg) no-repeat;
   width: 100%;
   height: 40px;
-  display: block;
+  /* display: block; */
   margin: auto;
-  margin-left: 65%;
+  margin-left: 60%;
   /* cursor: pointer; */
   border: none;
   /* position: fixed; */
