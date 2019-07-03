@@ -20,6 +20,11 @@ body {
   margin: 0px auto;
   text-align: center;
 }
+.hello{
+    height: 100%;
+    width: 100%;
+    padding: 50px 50px;
+}
 button{
   font-size: 0.5em;
   background: rgba(228, 19, 19, 0.865);
