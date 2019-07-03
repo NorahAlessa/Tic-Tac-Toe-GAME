@@ -1,0 +1,284 @@
+/* @import url('https://fonts.googleapis.com/css?family=Quicksand'); */
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Fredoka+One|Handlee|Josefin+Slab|Sigmar+One|Viga&display=swap');
+
+body {
+  font-size: 40px;
+  font-family: 'Fredoka One', cursive;
+  color: #223996;
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
+  background-image: url("22.png");
+  background-size: 100% 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  margin-bottom:5%; 
+  /* width: 50%; */
+}
+/* h1 {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 45px;
+} */
+
+.well {
+  position: relative;
+  width: 400px;
+  height: 442px;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  /* background-color: #fff; */
+  /* border: 10px solid rgb(225, 213, 232);
+  
+  box-shadow: inset 0 0 20px #000000; */
+  /*background-image:radial-gradient(#5F9EA0,white); */
+}
+
+button{
+  font-size: 0.5em;
+  /* -moz-border-radius: 12px;
+  -webkit-border-radius: 5px; */
+  border-radius: 10px;
+  background: rgba(228, 19, 19, 0.865);
+  color: rgba(245, 237, 8, 0.897);
+  /* background: -webkit-gradient(rgba(101, 101, 101, 0.482), white);
+  background: -webkit-radial-gradient(rgba(101, 101, 101, 0.482), white);
+  background: -o-radial-gradient(rgba(101, 101, 101, 0.482), white);
+  background: -ms-radial-gradient(rgba(101, 101, 101, 0.482), white); */
+  /* background: radial-gradient(rgba(101, 101, 101, 0.911), white); */
+  font-family: "Fredoka One",'Indie Flower', cursive;
+  font-size: 28px;
+  cursor: pointer;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+button:active, button:focus, button:visited {
+  outline: none;
+}
+button:hover {
+  background: -moz-radial-gradient(white, rgba(248, 248, 3, 0.975));
+  /* background: -webkit-gradient(white, rgb(110, 145, 167));
+  background: -webkit-radial-gradient(white, rgb(110, 145, 167));
+  background: -o-radial-gradient(white, rgb(110, 145, 167));
+  background: -ms-radial-gradient(white, rgb(110, 145, 167)); */
+  background: radial-gradient(white, rgba(247, 227, 0, 0.762));
+  /* background-image: $radial-gradient-reverse;*/
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  cursor: pointer;
+}
+
+/* #charcter button{
+  display: none;
+} */
+.choose-game p {
+  padding: 40px 0px;
+  font-family: 'Fredoka One','Indie Flower', cursive;
+}
+
+/* .choose-level {
+  display: none;
+}
+.choose-level p {
+  padding: 40px 0px 20px 0px;
+}
+.choose-level .radio {
+  position: static;
+} */
+/* .choose-level .disabled {
+  color: #999999;
+}
+.choose-level input[type=radio] {
+  margin: 11px -20px 0;
+} */
+/* .choose-level label {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+.choose-level button {
+  position: absolute;
+  bottom: -60px;
+  left: 80px;
+} */
+
+.players-names {
+  display: none;
+}
+.players-names input {
+  height: 45px;
+    margin-bottom: 20px;
+    font-size: 0.68em;
+    font-family: 'Fredoka One','Indie Flower', cursive;
+    color: #223996;
+
+}
+.players-names input:focus {
+  outline: none;
+  border: 2px solid rgb(19, 19, 19);
+  
+}
+.players-names p {
+  padding: 30px 0px;
+}
+.players-names ::-webkit-input-placeholder {
+  font-size: 0.5em;
+  
+}
+.players-names button {
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+}
+
+.choose-sign {
+  display: none;
+
+  
+}
+.images{
+  width: 150px;
+  height: 160px;
+}
+.choose-sign p {
+  padding: 50px 0px 30px 0px;
+}
+.choose-sign button {
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.choose-sign button:focus {
+  outeline: none;
+}
+
+.fields {
+  display: none;
+}
+
+.scores {
+  font-size: 0.7em;
+  color: rgb(191, 57, 57);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /* padding-top: 80px; */
+  display: none;
+}
+
+.player1-score {
+  float: left;
+  font-size: 22px;
+}
+
+.player2-score {
+  float: right;;
+  font-size:22px;
+}
+
+.message {
+  position: absolute;
+  background-image: linear-gradient(to bottom, transparent, transparent 35%, #ffffcc 35%, #ffffcc 65%, transparent 65%);
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  display: none;
+  z-index: 1;
+}
+.message p {
+  padding: 45% 0;
+}
+
+.turn-info {
+  position: absolute;
+  font-size: 0.6em;
+  font-weight: bold;
+  color: rgb(201, 36, 44);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  top: -60px;
+  display: none;
+}
+
+#reset {
+  position: absolute;
+  font-size: 20px;
+  padding: 2px 2px;
+  top: -60px;
+  right: 0px;
+
+}
+
+table {
+  margin: 0px auto;
+  font-size: 1.8em;
+  width: 100%;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  background: white;
+  /* opacity: 70%; */
+  /* background: -webkit-gradient(#e6d5e4, transparent);
+  background: -webkit-radial-gradient(#e6d5e4, transparent);
+  background: -o-radial-gradient(#e6d5e4, transparent);
+  background: -ms-radial-gradient(#e6d5e4, transparent); */
+  
+  cursor: pointer;
+}
+
+.td-clicked {
+  background: -moz-radial-gradient(transparent, #7bd882);
+  /* background: -webkit-gradient(transparent, #e6d5e4);
+  background: -webkit-radial-gradient(transparent, #e6d5e4);
+  background: -o-radial-gradient(transparent, #e6d5e4);
+  background: -ms-radial-gradient(transparent, #e6d5e4); */
+  /* background: radial-gradient(transparent, #bdbdbd); */
+}
+
+td {
+  border: 3px solid white;
+}
+
+/* tr:not(:last-child) {
+  border-bottom: 5px solid rgb(74, 72, 75);
+} */
+
+.td-winning-color {
+  background-color: rgba(241, 254, 1, 0.824);
+  /* opacity: 1; */
+}
+
+/* footer {
+  text-align: center;
+  font-size: 0.7em;
+  width: 100%;
+  height: 30px;
+}
+footer a {
+  color: orange;
+}
+footer a:hover {
+  color: orange;
+} */
+
+button#playpausebtn{	
+  background:url(https://image.flaticon.com/icons/svg/189/189889.svg) no-repeat;
+	width:6%;
+	height:30px;
+  display: block;
+    margin: auto;
+  
+}
+
+/* button#mutebtn{	
+  background:url(https://image.flaticon.com/icons/svg/204/204287.svg) no-repeat;
+	width:10%;
+	height:100px;
+  
+  display: block;
+    margin: auto;
+} */

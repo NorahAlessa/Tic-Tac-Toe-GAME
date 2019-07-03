@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Fredoka+One|Handlee|Josefin+Slab|Sigmar+One|Viga&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/11.png">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+  <!-- <audio controls autoplay>
+    <source src="Toy Story - Youve Got a Friend in Me.mp3">
+  </audio> -->
+  <!-- <a href="https://fontmeme.com/toy-story-font/"><img src="https://fontmeme.com/permalink/190702/990e77a442a40f05ccc18bf8244e7de7.png" alt="toy-story-font" border="0"></a> -->
+      <!-- <audio src="Toy Story - Youve Got a Friend in Me.mp3"></audio> -->
+      <audio><source src="https://www.dropbox.com/s/w4t8y43xi5mwku8/wining.mp3?raw=1"></source></audio>
+      <audio><source src="https://www.dropbox.com/s/gfv7klhzco8zez9/tie.mp3?raw=1"></source></audio>
+      <audio><source src="https://www.dropbox.com/s/1927v1q1mv45ny3/field_click.mp3?raw=1"></source></audio>
+
+  <img src="images/Text.png" class="center" alt="">
+      <!-- <h1>Tic Tac Toe Game! </h1> -->
+      <br/>
+      <button id="playpausebtn"></button>
+<!-- <button id="mutebtn"></button> -->
+      <div class = "well">
+        <div class = "turn-info"></div>
+        
+        <section class="message"><p></p></section>
+        
+        <section class="choose">
+        
+        <div class="choose-game">
+          <p>Choose number of players</p> 
+          <!-- <button class="choose-1">1 player</button> -->
+          <button class="choose-2">START</button>
+        </div>
+          
+        <div class="players-names">
+          <p>Enter players names</p> 
+          <input type="text" id="player1name" size="20" maxlength="10" placeholder = "Type Player 1 name" class="" val = "Player 1">
+          <input type="text" id="player2name" size="20" maxlength="10"placeholder = "Type Player 2 name"class="" val = "Player 2">
+          <button class="start-game">Next</button>
+        </div>
+          
+        <!-- <div class="choose-level">
+          <p>Chose game level:</p> 
+          <div class="btn-group">
+            <div class="radio">
+              <label><input type="radio" name="optionsRadios" id="easy" value="easy">Easy</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optionsRadios" id="hard" value="hard">Hard</label>
+            </div> -->
+         <!-- </div>
+          <button class="start-game">Start Game</button>
+       </div> -->
+          
+       <div class="choose-sign">
+         <p></p>
+         <!-- <img src="woody.png" class="images"alt="woody"> -->
+         <!-- <img src="buzz.png" class="images"alt="buzz"> -->
+          <button id="charcter" class="choose-x">X</button>
+          <button id="charcter" class="choose-o">O</button>
+          </div>
+        </section><!--end of choose-->
+        
+        <section class="fields">  
+          <table>
+            <tr>
+              <td id="1a" value = "1a">1a</td>
+              <td id="2a" value = "2a">2a</td>
+              <td id="3a" value = "3a">3a</td>
+            </tr>
+  
+             <tr>
+              <td id="1b" value = "1b">1b</td>
+              <td id="2b" value = "2b">2b</td>
+              <td id="3b" value = "3b">3b</td>
+            </tr>
+  
+             <tr>
+              <td id="1c" value = "1c">1c</td>
+              <td id="2c" value = "2c">2c</td>
+              <td id="3c" value = "3c">3c</td>
+            </tr>
+          </table>
+        </section><!--end of fields-->
+        
+        <section class="scores">
+          <p>0 : 0</p>
+          <div class="players-score">
+            <span class = "player1-score"></span>
+            <span class = "player2-score"></span>            
+            </div>
+        </section>
+        <button id = "reset">Reset</button>
+      
+
+      </div><!--end of well-->
+     
+     
+              <script
+              src="https://code.jquery.com/jquery-3.4.1.js"
+              integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+              crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
