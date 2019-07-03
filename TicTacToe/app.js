@@ -581,14 +581,5 @@ $(document).ready(function(){
 				playbtn.style.background = "url(images/muted.svg) no-repeat";
 			}
 		}
-		// function mute(){
-		// 	if(audio.muted){
-		// 		audio.muted = false;
-		// 		mutebtn.style.background = "url(https://image.flaticon.com/icons/svg/204/204287.svg) no-repeat";
-		// 	} else {
-		// 		audio.muted = true;
-		// 		mutebtn.style.background = "url(https://image.flaticon.com/icons/svg/148/148757.svg) no-repeat";
-		// 	}
-		// }
 	}
 	window.addEventListener("load", initAudioPlayer);
