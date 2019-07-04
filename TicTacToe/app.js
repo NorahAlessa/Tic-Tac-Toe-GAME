@@ -335,7 +335,7 @@ $(document).ready(function(){
 	  // return the chosen move (object) from the moves array
 		return moves[bestMove];
 	  }}//end of aiPredictBestMove func;
-  //background audio 
+  //background audio
 	var audio, playbtn;
 	function initAudioPlayer(){
 		audio = new Audio();
