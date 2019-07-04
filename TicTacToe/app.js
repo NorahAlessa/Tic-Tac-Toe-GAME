@@ -175,11 +175,11 @@ $(document).ready(function(){
    //Checking for wining + winingMessage 
 	function checkResult(player){
 	 if($("#1a").text() === player && $("#2a").text() === player && $("#3a").text() === player){
-	   $("#1a, #2a, #3a").addClass('td-winning-color').addClass("animated pulse");
+	   $("#1a, #2a, #3a").addClass('td-winning-color');
 	   return winnerUpdate(player);
 	 }
 	 else if($("#1b").text() === player && $("#2b").text() === player && $("#3b").text() === player){
-	   $("#1b, #2b, #3b").addClass('td-winning-color').addClass("animated pulse");
+	   $("#1b, #2b, #3b").addClass('td-winning-color');
 		return winnerUpdate(player);
 	 }
 	 else if($("#1c").text() === player && $("#2c").text() === player && $("#3c").text() === player){
@@ -303,7 +303,7 @@ $(document).ready(function(){
 	  $(".choose,  .choose-game").css("display", "block");
 	  $(".fields, .scores, .turn-info, .message, .choose-sign, .choose-level, .players-names ").css("display", "none");
 	} 
-   //2. AI Predict and define computer's moves - level Hard 
+   //
 	function aiPredictBestMove(){
 	  //Define empty spaces/indexes in New board arr
 	  function getEmptyIndexies(board){
