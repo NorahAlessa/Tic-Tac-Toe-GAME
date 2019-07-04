@@ -1,6 +1,8 @@
 # Tic-Tac-Toe-GAME
 
-![alt text](TicTacToe/images/woodyGIF.gif "Toy Story")
+#### ![alt text](TicTacToe/images/woodyGIF.gif "Toy Story")
+
+
 click [HERE](https://github.com/NorahAlessa/Tic-Tac-Toe-game/index.html) to start the game!
 ## Technical Requirements
 * Render a game board in the browser
